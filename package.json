@@ -1,0 +1,26 @@
+{
+  "name": "resume-builder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "16.14.2",
+    "npm": "8.12.1"
+  },
+  "scripts": {
+    "client-install": "npm install --prefix frontend",
+    "server": "nodemon backend.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "start": "node backend.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix backend"
+  },
+  "author": "saikiran",
+  "license": "ISC",
+  "dependencies": {
+    "antd": "^4.21.4",
+    "express": "^4.18.1",
+    "mongoose": "^6.4.0",
+    "nodemon": "^2.0.18"
+  }
+}

@@ -1,0 +1,31 @@
+.parent{
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    position: absolute;
+    width: 100%;
+}
+.parent h1{
+    font-size: 22px;
+    font-weight: bold;
+}
+.parent form{
+    width: 400px;
+    box-shadow: 0 0 3px gray;
+    padding: 20px;
+    background-color: white !important;
+    padding: 60px 30px;
+    z-index: 1;
+}
+.name{
+    font-size: 250px !important;
+    position:absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50% , -50%);
+
+}
